@@ -1,0 +1,281 @@
+\documentclass[a4paper,12 pt]{article}
+
+%% Language and font encodings
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{amsmath, amsthm, amssymb, amsfonts} 
+\usepackage[mathscr]{eucal}
+\usepackage{ulem} % subrayar, tachar
+\usepackage{hyperref} % para el url
+\usepackage{multirow, array} % para las tablas
+\usepackage{float} % para tablas [H]
+\usepackage{graphicx} % graficos
+\usepackage{titlesec} %subsubsubsection
+\usepackage[usenames]{color} %palabras con color
+\usepackage{lscape} % texto horizontal
+\usepackage{pdflscape} % hoja horizontal
+\usepackage{booktabs} %tabla con puntos
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+  
+%counter
+\newcounter{mycounter} % create a new counter, called 'mycounter'
+% default def'n of '\themycounter' is '\arabic{mycounter}'
+
+%% command to increment 'mycounter' by 1 and to display its value:
+\newcommand\showmycounter{\stepcounter{mycounter}\themycounter}
+
+\usepackage{lipsum}
+\newcommand\showlips{\stepcounter{mycounter}\lipsum[\value{mycounter}]}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,marginparwidth= 1.5cm]{geometry}
+  
+\title{\LARGE \textbf{\\[0.5cm] Ingenio\\[2.5cm]}}
+
+% Chicos, porfavor incluyan sus nombres en orden alfabetico
+\author{\textbf{Grupo 7}\\[0.5cm]
+        Valeria Huepa Ducuara\\
+        Juan José Peña Becerra\\
+        Carlos Daniel Rincón Mora\\
+        Guiselle Tatiana Zambrano Penagos\\[2.5cm]
+        Sebastian David Moreno Bernal\\[2.5cm]}
+\date{}
+
+\begin{document}
+
+\newpage
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.57\textwidth]{images/escudoUN.png}
+\end{figure}
+\maketitle 
+\thispagestyle{empty}
+
+\begin{center}
+    \small Universidad Nacional de Colombia\\
+    Facultad de Ingeniería\\
+    Departamento de Ingeniería de Sistemas e Industrial\\
+    Ingeniería de Sistemas\\
+    Ingeniería de Software II\\
+    Bogotá, Colombia\\
+    2020
+\end{center}
+\newpage
+\tableofcontents % indice de contenidos}
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\section{Descripción General}
+
+
+% arreglar: Mejorar la descripción del problema
+\subsection{Descripción del Problema}
+
+Dada la existencia de una necesidad de tener una plataforma online, adicionalmente
+no existen muchos canales de información para personas interesadas en el campo de
+la Ingeniería que quieran mantenerse informadas diariamente por medio de informes,
+artículos y noticias de parte de una fuente confiable y en constante
+actualización, esto es porque los canales existentes no se mantienen en continuo
+mantenimiento o no son de agrado para el público en mención. Así mismo, hoy en día
+circulan noticias falsas por redes sociales, y en otros medios de comunicación
+quitando la certeza y veracidad de la información. Se desea una plataforma más
+personal, en donde las personas del campo de la Ingeniería pueden conocerse e
+interactuar entre ellas, para obtener conocimiento en diversas áreas en común de
+interés para cada uno, además de comentar a los demás usuario su opinión de cierto
+tema.
+
+% arreglar: Mejorar la descripción del producto
+\subsection{Descripción del Producto}
+
+El software a realizar pretende tener un vínculo con el público interesado en
+temas actuales de Ingeniería (Stakeholders), y desea brindarle información de
+primera mano, así como artículos (científicos, de opinión y periodísticos ) de
+gran interés para el mundo actual, con autores de renombre en la industria de
+Ingeniería. Así mismo, podrán registrarse para recibir notificaciones cada que
+algún artículo de su posible interés sea publicado. Recibirán notificaciones de
+sus autores preferidos, para mantenerse actualizados con el trabajo de reconocidos
+ingenieros.\\
+
+Se desea realizar una plataforma más personal, que las que existen actualmente, en
+la cual los usuarios puedan conocer a otras personas con intereses similares en el
+campo de la Ingeniería, además de conocer, seguir y  comentar el trabajo de otros
+ingenieros.\\
+
+Foros, notificaciones..
+
+La metodología a trabajar es Scrum.El manejo del código de software se maneja por
+medio de un sistema de versionamiento central (VCS) tipo Git, usando la
+herramienta GitHub. 
+
+Fechas de las avance del proyecto será de forma semanal y los reportes de avances
+internos, reuniones, serán de tipo diario.
+
+% arreglar: Mejorar la descripción de los roles
+\subsection{Descripción de los Roles de Usuario}
+
+\begin{itemize}
+    \item \textbf{Administrador} 
+    \item \textbf{Autor} 
+    \item \textbf{Usuario} 
+    \item \textbf{Visitante} 
+\end{itemize}{}
+
+\subsection{Restricciones Generales}
+\subsection{Supuestos y Dependencias}
+
+\section{Descripción del Equipo de Desarrollo}
+
+\subsection{Roles del equipo}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Rol}   &   \textbf{Nombre}  \\ 
+        \hline
+        Scrum Master   &   Guiselle Tatiana Zambrano Penagos\\
+        \hline
+        \multirow{2}{2cm}{Front End}    &   Valeria Huepa Ducuara\\
+            &   Carlos Daniel Rincón Mora\\
+        \hline
+        \multirow{2}{2cm}{Back End}    &   Juan José Peña Becerra\\
+            &   Guiselle Tatiana Zambrano Penagos\\
+        \hline
+         
+    \end{tabular}
+    \caption{Roles del equipo}}
+    \label{T00}
+\end{table}{}
+
+\subsection{Recursos del equipo}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{2cm}|M{1.5cm}|M{3cm}|M{3cm}|M{1.5cm}|M{2cm}|}
+        \hline
+        \textbf{Nombre}    &\textbf{Marca}     &\textbf{Sistema Operativo} 
+        &\textbf{Procesador}   &\textbf{RAM}   &\textbf{Capacidad}\\
+        \hline
+        Valeria Huepa                       &Asus   &Windows 10 Home x64 
+        & Intel(R) Core(TM) i5-4210U CPU    &12GB   &HDD 240GB \\
+        \hline
+        Juan Peña                           &Asus   &Windows 10 Home x64
+        &Intel(R) Core(TM) i5-6198DU CPU @ 2.30 GHz &8GB    &HDD 240GB\\
+        \hline
+        Carlos Rincón                       &Asus   &Windows 10 Home x64
+        &Intel(R) Core(TM) i7-3537U CPU @ 2.00GHz   &8GB    &SSD 128GB\\
+        \hline
+        Tatiana Zambrano                    &Lenovo &Kali Linux x64
+        &AMD A8 - 7410 2.2 GHz              &4GB    &HDD 500GB\\
+        \hline
+    \end{tabular}
+    \caption{Recursos del equipo}
+    \label{T01}}
+\end{table}{}
+
+% arreglar: Completar info
+\subsection{Disposición del equipo}
+
+\section{Historias de Usuario}
+
+% plantilla - Copear y pegar
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                       &   \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &   \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|l|}{
+                \textcolor{red}{Como} 
+            }\\
+            &\multicolumn{3}{|l|}{
+                \textcolor{red}{Quiero} 
+            }\\
+            &\multicolumn{3}{|l|}{
+                \textcolor{red}{Con el fin de} 
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            &\multicolumn{3}{|l|}{
+                
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{T02}}
+\end{table}{}
+
+
+\section{Mockups}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.2]{images/escudoUN.png}
+    \caption{Descripción}
+    \label{F00}
+\end{figure}{}
+
+
+\begin{landscape}
+\section{Modelo Entidad Relación}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale = 0.5]{images/escudoUN.png}
+        \caption{Descripción}
+        \label{F01}
+    \end{figure}{}
+\end{landscape}
+
+
+\section{Modelo de Base de Datos}
+
+\section{Estimación de Costos}
+
+% plantilla: copiar y pegar
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{R{6cm}L{6cm}}
+        \textbf{Concepto}   &\textbf{Valor}\\
+        \\
+        \multicolumn{2}{c}{Holi \dotfill \$10'000.000} \\
+        \multicolumn{2}{c}{Holi \dotfill \$10'000.000} \\
+        \hline
+        \multicolumn{2}{c}{\textbf{Total} \dotfill \$10'000.000} \\
+    \end{tabular}
+    \label{T03}}
+\end{table}{}
+
+
+\section{Análisis de riesgos}
+
+\begin{thebibliography}{50}
+\bibitem{00} Description \url{https://github.com}
+
+\end{thebibliography}{}
+
+\end{document}{}
