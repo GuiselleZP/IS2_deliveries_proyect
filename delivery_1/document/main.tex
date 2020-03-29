@@ -113,56 +113,71 @@ experiencia académica o laboral.\\
 
 La plataforma cuenta con diferentes foros, en los cuales los usuarios podrán dar su
 opinión de forma libre, siempre y cuando sean respetuosos con los demás usuarios y
-autores, en caso contrario su cuenta podría ser vetada o eliminada de la plataforma. \\
+autores, en caso contrario su cuenta podría ser vetada o eliminada de la plataforma.
 
-La metodología a trabajar este proyecto es Scrum, siguiendo todos los métodos y
+% arreglar: Mejorar la descripción de los roles
+\subsection{Descripción de los Roles de Usuario}
+
+\begin{itemize}
+    \item \textbf{Administrador:} Individuo que posee permisos especiales que le 
+    permiten otorgar o despojar el rol de autor para los usuarios, este tendrá que
+    verificar que el usuario que desee publicar contenido en la plataforma posea
+    comprobantes que respalden su experiencia académica y laboral sobre uno o varios
+    temas relacionados con la ingeniería, también será el responsable de atender las
+    diferentes denuncias realizadas por los usuarios y determinar si es pertinente o 
+    no vetar o eliminar al usuario denunciado.
+    
+    \item \textbf{Autor:} Individuo que posee el rol de usuario y autor, este puede 
+    publicar contenido relacionado con la ingeniería en la plataforma e interactuar
+    con los demás usuarios, para publicar información este puede hacerlo en formato
+    PDF, JPG o PNG, podrá agregar archivos de opinión, investigación y noticias
+    clasificándolos en una o mas categorías (computación, electrónica y robótica)
+    y presentar esta información por medio de infografías, o texto plano.
+    
+    \item \textbf{Usuario:} Es el rol que tendrán todos los individuos que se
+    registren en la plataforma, este podrá suscribirse a una o más categorías lo que
+    le permitirá tener una sección de cada una en la pantalla de inicio, con los
+    diferentes archivos pertenecientes a esta. Este también podrá seguir a autores y
+    otros usuarios y recibir notificaciones cada vez que estos publiquen archivos de
+    información o realicen comentarios en los foros. Este usuario podrá acceder a la
+    información de la plataforma por medio de un buscador general (filtrando por
+    palabras clave) o especializada (fecha de publicación, autor, categoría y tipo).
+    
+    \item \textbf{Visitante:} Este podrá ver la pagina principal de noticias y
+    acceder al buscador general (filtrando por palabras clave), podrá ver las
+    diferentes categorías y acceder a los artículos e infografías, más no podrá
+    suscribirse a ninguna categoría, seguir autores o usuarios ni comentar en ningún
+    foro. Si este desea acceder a más funcionalidades, tendrá que registrarse a la
+    plataforma.
+\end{itemize}{}
+
+\section{Descripción del Equipo y Metodología de Desarrollo}
+
+La metodología a seguir en este proyecto es Scrum, siguiendo todas las etapas y
 características de la metodología mencionada. El manejo del código de software se
-maneja por medio de un sistema de versionamiento central (VCS) tipo Git, usando la
-herramienta GitHub por parte de cada uno de los desarrolladores. \\
+manejará por medio de un sistema de control de versiones central, usando las
+herramientas Git y GitHub por parte de cada uno de los desarrolladores. \\
 
 Para el correcto avance del proyecto se realizarán entregas parciales con análisis de
 cada aspecto de este. Las fechas de los avances del proyecto serán de la siguiente
 manera:
 
 \begin{itemize}
-    \item \textbf{Iteración 0: Marzo 24 del 2020} 
-    \item \textbf{Iteración 1: Abril 14 del 2020} 
-    \item \textbf{Iteración 2: Mayo 5 del 2020} 
-    \item \textbf{Iteración 3: Mayo 26 del 2020}
-    \item \textbf{Iteración 4: Junio 16 del 2020} 
-    \item \textbf{Iteración Final: Junio 23 del 2020} 
+    \item \textbf{Iteración 0:} Marzo 24 del 2020
+    \item \textbf{Iteración 1:} Abril 14 del 2020
+    \item \textbf{Iteración 2:} Mayo 5 del 2020
+    \item \textbf{Iteración 3:} Mayo 26 del 2020
+    \item \textbf{Iteración 4:} Junio 16 del 2020
+    \item \textbf{Iteración Final:} Junio 23 del 2020
 \end{itemize}{}
-
-Por otra parte, ya que la forma de trabajar interna del equipo de desarrollo sera de a pares, estos tendrán que mantener comunicación diaria entre ellos, mientras que los reportes de avances internos y  reuniones del equipo completo de desarrolladores, serán de 2 veces a la semana.
-
-% arreglar: Mejorar la descripción de los roles
-\subsection{Descripción de los Roles de Usuario}
-
-\begin{itemize}
-    \item \textbf{Administrador} 
-    \item \textbf{Autor} 
-    \item \textbf{Usuario} 
-    \item \textbf{Visitante} 
-\end{itemize}{}
-
-\subsection{Restricciones Generales}
-
-\begin{itemize}
-    \item La cantidad de desarrolladores que realizarán la aplicación es de 4.
-    \item l desarrollo del producto se verá condicionado por el tiempo, el 
-    avance de la misma se dará durante un lapso de aproximadamente 3 meses.
-\end{itemize}{}
-
-\subsection{Supuestos y Dependencias}
-\begin{itemize}
-    \item Los usuarios tienen dispositivos con conexión a internet, desde los
-    cuales podrán acceder a la aplicación.
-    \item Los autores subirán los archivos a publicar en formato PDF, JPG o PNG.
-\end{itemize}{}
-
-\section{Descripción del Equipo de Desarrollo}
 
 \subsection{Roles del equipo}
+
+La forma en la que se trabajará durante el desarrollo del software será en equipos de 2
+personas, donde uno de ellos trabajará en el front-end y otro en el back-end, los
+equipos serán redefinidos en cada iteración y estos mantendrán comunicación diaria,
+mientras que los reportes de avances por equipo serán realizados 2 veces por semana,
+donde todos los desarrolladores estarán presentes.
 
 \begin{table}[H]
     \centering
@@ -216,6 +231,28 @@ Por otra parte, ya que la forma de trabajar interna del equipo de desarrollo ser
 
 % arreglar: Completar info
 \subsection{Disposición del equipo}
+
+% nombre, frecuencia semanal (días por se, horas de desarrollo diario
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{2cm}|M{4cm}|M{4cm}|}
+        \hline
+        \textbf{Nombre}    & \textbf{Frecuencia Semanal (días por semana)}   
+        &\textbf{Horas de desarrollo por día}\\
+        \hline
+        Valeria Huepa   &       &       \\
+        \hline
+        Juan Peña       &       &       \\
+        \hline
+        Carlos Rincón   &       &       \\
+        \hline
+        Tatiana Zambrano    & 5      &  2     \\
+        \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}}
+\end{table}{}
 
 \section{Historias de Usuario}
 
@@ -303,37 +340,274 @@ Por otra parte, ya que la forma de trabajar interna del equipo de desarrollo ser
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|l|}{
+            &\multicolumn{3}{|p{8cm}|}{
                 \textcolor{red}{Como} 
             }\\
-            &\multicolumn{3}{|l|}{
+            &\multicolumn{3}{|p{8cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|l|}{
+            &\multicolumn{3}{|p{8cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            &\multicolumn{3}{|l|}{
+            & \multicolumn{3}{|p{8cm}|}{
                 
             }\\
         \hline
     \end{tabular}
     \caption{Nombre de la historia}
-    \label{T02}}
+    \label{T000}}
 \end{table}{}
 
 %borrar
 \subsection{Rol-Visitante}
 
+% PLANTILLA PARA VISITANTE
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Visitante \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &   \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Visitante
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} 
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} 
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{Visit00}}
+\end{table}{}
+
 %borrar
 \subsection{Rol-Usuario}
+
+% PLANTILLA PARA USUARIO
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} 
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} 
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{User00}}
+\end{table}{}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Inicio de sesión}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                       &  Usuario \\
+        \hline
+        \textbf{Prioridad}          & 5  &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &  2 &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} iniciar sesión en el sistema.
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} hacer uso de las funcionalidades a
+                las que puedo acceder.
+            }\\
+        \hline
+        \multirow{4}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                El usuario será redirigido a la página principal, donde podrá ver
+                la sección de noticias general, los buscadores y las secciones de
+                cada categoría a las que está suscrito.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Inicio de sesión para el rol usuario}
+    \label{User01}}
+\end{table}{}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &   \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} ver mi perfil 
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} revisar la información relacionada a 
+                mi cuenta.
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                El usuario podrá acceder a una sección en donde podrá visualizar
+                sus datos personales
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{User02}}
+\end{table}{}
 
 %borrar
 \subsection{Rol-Autor}
 
+% PLANTILLA PARA AUTOR
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Autor \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &   \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Autor
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} 
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} 
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{Author00}}
+\end{table}{}
+
 %borrar
 \subsection{Rol-Administrador}
+
+% PLANTILLA PARA ADMINISTRADOR
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}               &  Administrador \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &   \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Como} Administrador
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Quiero} 
+            }\\
+            &\multicolumn{3}{|p{8cm}|}{
+                \textcolor{red}{Con el fin de} 
+            }\\
+        \hline
+        \multirow{1}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{8cm}|}{
+                
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Nombre de la historia}
+    \label{00}}
+\end{table}{}
 
 \section{Mockups}
 \begin{figure}[H]
