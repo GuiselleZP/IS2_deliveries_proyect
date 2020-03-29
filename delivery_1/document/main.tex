@@ -79,47 +79,61 @@
 \section{Descripción General}
 
 
-% arreglar: Mejorar la descripción del problema
 \subsection{Descripción del Problema}
 
-Dada la existencia de una necesidad de tener una plataforma online, adicionalmente
-no existen muchos canales de información para personas interesadas en el campo de
-la Ingeniería que quieran mantenerse informadas diariamente por medio de informes,
-artículos y noticias de parte de una fuente confiable y en constante
-actualización, esto es porque los canales existentes no se mantienen en continuo
-mantenimiento o no son de agrado para el público en mención. Así mismo, hoy en día
-circulan noticias falsas por redes sociales, y en otros medios de comunicación
-quitando la certeza y veracidad de la información. Se desea una plataforma más
-personal, en donde las personas del campo de la Ingeniería pueden conocerse e
-interactuar entre ellas, para obtener conocimiento en diversas áreas en común de
-interés para cada uno, además de comentar a los demás usuario su opinión de cierto
-tema.
+Dada la existencia de una necesidad de tener una plataforma online, adicionalmente no
+existen muchos canales de información para personas interesadas en el campo de la
+Ingeniería que quieran mantenerse informadas diariamente por medio de informes,
+artículos y noticias de parte de una fuente confiable y en constante actualización,
+esto es porque los canales existentes no se mantienen en continuo mantenimiento o no
+son de agrado para el público en mención. Así mismo, hoy en día circulan noticias
+falsas por redes sociales, y en otros medios de comunicación quitando la certeza y
+veracidad de la información. Se desea una plataforma más personal, en donde las
+personas del campo de la Ingeniería pueden conocerse e interactuar entre ellas, para
+obtener conocimiento en diversas áreas en común de interés para cada uno, además de
+comentar a los demás usuarios su opinión de cierto tema.\\
 
-% arreglar: Mejorar la descripción del producto
 \subsection{Descripción del Producto}
 
-El software a realizar pretende tener un vínculo con el público interesado en
-temas actuales de Ingeniería (Stakeholders), y desea brindarle información de
-primera mano, así como artículos (científicos, de opinión y periodísticos ) de
-gran interés para el mundo actual, con autores de renombre en la industria de
-Ingeniería. Así mismo, podrán registrarse para recibir notificaciones cada que
-algún artículo de su posible interés sea publicado. Recibirán notificaciones de
-sus autores preferidos, para mantenerse actualizados con el trabajo de reconocidos
-ingenieros.\\
+El software a realizar pretende tener un vínculo con el público interesado en temas
+actuales de Ingeniería (Stakeholders), y desea brindarle información de primera mano,
+así como artículos (científicos, de opinión y periodísticos ) de gran interés para el
+mundo actual, con autores de renombre en la industria de Ingeniería. Así mismo, podrán
+registrarse para recibir notificaciones cada que algún artículo de su posible interés
+sea publicado. Recibirán notificaciones de sus autores preferidos, para mantenerse
+actualizados con el trabajo de reconocidos ingenieros.\\
 
-Se desea realizar una plataforma más personal, que las que existen actualmente, en
-la cual los usuarios puedan conocer a otras personas con intereses similares en el
-campo de la Ingeniería, además de conocer, seguir y  comentar el trabajo de otros
-ingenieros.\\
+Se desea realizar una plataforma más personal, que las que existen actualmente, en la
+cual los usuarios puedan conocer a otras personas con intereses similares en el campo
+de la Ingeniería, además de conocer, seguir y comentar el trabajo de otros ingenieros.
+El registro como usuario es de carácter público, mientras que para que para ser autor y
+poder realizar una publicación, esté debe ser aprobado por el administrador,
+demostrando conocimiento en un área de interés, presentado comprobantes de estudios y
+experiencia académica o laboral.\\
 
-Foros, notificaciones..
+La plataforma cuenta con diferentes foros, en los cuales los usuarios podrán dar su
+opinión de forma libre, siempre y cuando sean respetuosos con los demás usuarios y
+autores, en caso contrario su cuenta podría ser vetada o eliminada de la plataforma. \\
 
-La metodología a trabajar es Scrum.El manejo del código de software se maneja por
-medio de un sistema de versionamiento central (VCS) tipo Git, usando la
-herramienta GitHub. 
+La metodología a trabajar este proyecto es Scrum, siguiendo todos los métodos y
+características de la metodología mencionada. El manejo del código de software se
+maneja por medio de un sistema de versionamiento central (VCS) tipo Git, usando la
+herramienta GitHub por parte de cada uno de los desarrolladores. \\
 
-Fechas de las avance del proyecto será de forma semanal y los reportes de avances
-internos, reuniones, serán de tipo diario.
+Para el correcto avance del proyecto se realizarán entregas parciales con análisis de
+cada aspecto de este. Las fechas de los avances del proyecto serán de la siguiente
+manera:
+
+\begin{itemize}
+    \item \textbf{Iteración 0: Marzo 24 del 2020} 
+    \item \textbf{Iteración 1: Abril 14 del 2020} 
+    \item \textbf{Iteración 2: Mayo 5 del 2020} 
+    \item \textbf{Iteración 3: Mayo 26 del 2020}
+    \item \textbf{Iteración 4: Junio 16 del 2020} 
+    \item \textbf{Iteración Final: Junio 23 del 2020} 
+\end{itemize}{}
+
+Por otra parte, ya que la forma de trabajar interna del equipo de desarrollo sera de a pares, estos tendrán que mantener comunicación diaria entre ellos, mientras que los reportes de avances internos y  reuniones del equipo completo de desarrolladores, serán de 2 veces a la semana.
 
 % arreglar: Mejorar la descripción de los roles
 \subsection{Descripción de los Roles de Usuario}
@@ -132,7 +146,19 @@ internos, reuniones, serán de tipo diario.
 \end{itemize}{}
 
 \subsection{Restricciones Generales}
+
+\begin{itemize}
+    \item La cantidad de desarrolladores que realizarán la aplicación es de 4.
+    \item l desarrollo del producto se verá condicionado por el tiempo, el 
+    avance de la misma se dará durante un lapso de aproximadamente 3 meses.
+\end{itemize}{}
+
 \subsection{Supuestos y Dependencias}
+\begin{itemize}
+    \item Los usuarios tienen dispositivos con conexión a internet, desde los
+    cuales podrán acceder a la aplicación.
+    \item Los autores subirán los archivos a publicar en formato PDF, JPG o PNG.
+\end{itemize}{}
 
 \section{Descripción del Equipo de Desarrollo}
 
@@ -144,6 +170,8 @@ internos, reuniones, serán de tipo diario.
     \begin{tabular}{|c|c|}
         \hline
         \textbf{Rol}   &   \textbf{Nombre}  \\ 
+        \hline
+        Product Owner   &   Sebastian David Moreno Bernal\\
         \hline
         Scrum Master   &   Guiselle Tatiana Zambrano Penagos\\
         \hline
@@ -191,6 +219,71 @@ internos, reuniones, serán de tipo diario.
 
 \section{Historias de Usuario}
 
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{1cm}|M{2cm}|M{8cm}|}
+        \hline
+        \textbf{Valor}   &\textbf{Significado}   &\textbf{Criterio}\\
+        \hline 
+        \multirow{1}{1cm}{\centering 1}    
+            &\multirow{1}{2cm}{\centering Muy bajo}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 2}    
+            &\multirow{1}{2cm}{\centering Bajo}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 3}    
+            &\multirow{1}{2cm}{\centering Moderado}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 4}    
+            &\multirow{1}{2cm}{\centering Alto}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 5}    
+            &\multirow{1}{2cm}{\centering Muy alto}
+            & Criterio      \\
+        \hline
+    \end{tabular}
+    \caption{Niveles de riesgo}
+    \label{Nriesgo}}
+\end{table}{}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{1cm}|M{2cm}|M{8cm}|}
+        \hline
+        \textbf{Valor}   &\textbf{Significado}   &\textbf{Criterio}\\
+        \hline 
+        \multirow{1}{1cm}{\centering 1}    
+            &\multirow{1}{2cm}{\centering Muy baja}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 2}    
+            &\multirow{1}{2cm}{\centering Baja}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 3}    
+            &\multirow{1}{2cm}{\centering Moderada}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 4}    
+            &\multirow{1}{2cm}{\centering Alta}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 5}    
+            &\multirow{1}{2cm}{\centering Muy alta}
+            & Criterio      \\
+        \hline
+    \end{tabular}
+    \caption{Niveles de prioridad}
+    \label{Nprioridad}}
+\end{table}{}
+
 % plantilla - Copear y pegar
 \begin{table}[H]
     \centering
@@ -230,6 +323,17 @@ internos, reuniones, serán de tipo diario.
     \label{T02}}
 \end{table}{}
 
+%borrar
+\subsection{Rol-Visitante}
+
+%borrar
+\subsection{Rol-Usuario}
+
+%borrar
+\subsection{Rol-Autor}
+
+%borrar
+\subsection{Rol-Administrador}
 
 \section{Mockups}
 \begin{figure}[H]
@@ -273,8 +377,131 @@ internos, reuniones, serán de tipo diario.
 
 \section{Análisis de riesgos}
 
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{1cm}|M{3cm}|M{8cm}|}
+        \hline
+        \textbf{Valor}  &\textbf{Tipo}   &\textbf{Definición}\\
+        \hline 
+        \multirow{1}{1cm}{\centering 1}    
+            & \multirow{1}{3cm}{\centering Técnico}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 2}
+            & \multirow{1}{3cm}{\centering Organizacional}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 3}
+            & \multirow{1}{3cm}{\centering Cronograma}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 4}
+            & \multirow{1}{3cm}{\centering Externo}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 5}
+            & \multirow{1}{3cm}{\centering Gerencial}
+            & Criterio      \\
+        \hline
+    \end{tabular}
+    \caption{Tipos de riesgo}
+    \label{Riesgo}}
+\end{table}{}
+
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{1cm}|M{2cm}|M{8cm}|}
+        \hline
+        \textbf{Valor}   &\textbf{Significado}   &\textbf{Criterio}\\
+        \hline 
+        \multirow{1}{1cm}{\centering 1}    
+            &\multirow{1}{2cm}{\centering Muy bajo}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 2}    
+            &\multirow{1}{2cm}{\centering Bajo}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 3}    
+            &\multirow{1}{2cm}{\centering Moderado}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 4}    
+            &\multirow{1}{2cm}{\centering Alto}
+            & Criterio      \\
+        \hline
+        \multirow{1}{1cm}{\centering 5}    
+            &\multirow{1}{2cm}{\centering Muy alto}
+            & Criterio      \\
+        \hline
+    \end{tabular}
+    \caption{Niveles de Impacto}
+    \label{Nimpacto}}
+\end{table}{}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{1cm}|M{1.5cm}|M{2.5cm}|M{4cm}|}
+         \hline
+            \textbf{Riesgo} & \textbf{Tipo} &\textbf{Impacto}
+            & \textbf{Probabilidad} & \textbf{Plan de acción}\\
+         \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+             
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+         \multirow{1}{3cm}{\centering Ries}
+             & \multirow{1}{1cm}{\centering 1}
+             & \multirow{1}{1.5cm}{\centering 5}
+             & \multirow{1}{2.5cm}{\centering 50\%}
+             &  Descrip     \\
+        \hline
+    \end{tabular}
+    \caption{Riesgos de desarrollo}
+    \label{riesgos}}
+\end{table}{}
+
+
 \begin{thebibliography}{50}
-\bibitem{00} Description \url{https://github.com}
+\bibitem{00} Description. Disponible en: \url{https://github.com}
 
 \end{thebibliography}{}
 
