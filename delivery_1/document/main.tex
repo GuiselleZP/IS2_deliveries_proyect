@@ -461,7 +461,7 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Pepito Perez }\\
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
-        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+        \multirow{4}{3cm}{\centering\textbf{Descripción}}
             &\multicolumn{3}{|p{8cm}|}{
                 \textcolor{red}{Como} Usuario
             }\\
@@ -705,31 +705,79 @@ donde todos los desarrolladores estarán presentes.
 \section{Modelo Entidad Relación}
     \begin{figure}[H]
         \centering
-        \includegraphics[scale = 0.5]{images/escudoUN.png}
+        \includegraphics[scale = 0.7]{images/ERD.png}
+        \caption{Descripción}
+        \label{F01}
+    \end{figure}{}
+
+\section{Modelo de Base de Datos}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale = 0.55]{images/Diagr_BD.png}
         \caption{Descripción}
         \label{F01}
     \end{figure}{}
 \end{landscape}
 
-
-\section{Modelo de Base de Datos}
-
 \section{Estimación de Costos}
+El tiempo estimado para realizar el proyecto es del 25 de Marzo del 2020 al 25 de Junio del 2020 (3 meses). Por lo tanto todos los gastos se contemplan para este tiempo estimado.\\
+
+\textbf{Costos Directos de Personal:}
+
+Los costos directos de personal hacen referencia a las personas contratadas que colaboran directamente en el proyecto; Scrum Master y 3 desarrolladores.\\
+
+Según la página de búsqueda de empleos “Indeed”\cite{01}, el salario promedio de un Desarrollador de Software en Colombia es de \$ 2’383.039 COP al mes y para un Scrum Master es de \$3.942.313 .Tanto el Scrum Master, como los desarrolladores, se encuentran en últimos semestres de universidad, al momento realizar el proyecto y sus contratos serán por prestación de servicios. 
 
 % plantilla: copiar y pegar
 \begin{table}[H]
     \centering
     \small{
     \begin{tabular}{R{6cm}L{6cm}}
-        \textbf{Concepto}   &\textbf{Valor}\\
+        \textbf{Concepto}   &\textbf{Valor(3 meses)}\\
         \\
-        \multicolumn{2}{c}{Holi \dotfill \$10'000.000} \\
-        \multicolumn{2}{c}{Holi \dotfill \$10'000.000} \\
+        \multicolumn{2}{c}{Scrum master  \dotfill  \$11'826.939} \\
+        \multicolumn{2}{c}{Desarrolladores \dotfill \$7'149.117} \\
         \hline
-        \multicolumn{2}{c}{\textbf{Total} \dotfill \$10'000.000} \\
+        \multicolumn{2}{c}{\textbf{Total} \dotfill \$18'976.056} \\
     \end{tabular}
     \label{T03}}
 \end{table}{}
+
+\textbf{Costos Directos e indirectos de material :}
+
+Estos costos son los relacionados a la compra o alquiler de equipos necesarios para el desarrollo del software, para este proyecto consideramos el alquiler de 4 computadores\cite{02} por un valor mensual de \$220.000 COP, además se consideran como costos indirectos el consumo de internet y energía eléctrica en el lugar de desarrollo, estos corresponden a un valor de \$110.000 COP mensuales de servicio de energía eléctrica y \$103.000 por servicio de internet, a continuación se muestran los valores para un total de tres meses.
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{R{6cm}L{6cm}}
+        \textbf{Concepto}   &\textbf{Valor(3 meses)}\\
+        \\
+        \multicolumn{2}{c}{Alquiler de equipos   \dotfill  \$2'640.000} \\
+        \multicolumn{2}{c}{Servicio de energía eléctrica\dotfill  \$330.000} \\
+        \multicolumn{2}{c}{Servicio de internet \dotfill \$309.000} \\
+        \hline
+        \multicolumn{2}{c}{\textbf{Total} \dotfill \$3'279.000} \\
+    \end{tabular}
+    \label{T03}}
+\end{table}{}
+
+\textbf{Total de Costos:}
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{R{6cm}L{6cm}}
+        \textbf{Concepto}   &\textbf{Valor}\\
+        \\
+        \multicolumn{2}{c}{Costos directos personal  \dotfill  \$18'976.056} \\
+        \multicolumn{2}{c}{Costos directos e indirectos de recursos fisicos \dotfill \$3'279.000} \\
+        \hline
+        \multicolumn{2}{c}{\textbf{Total} \dotfill \$22'255.056} \\
+    \end{tabular}
+    \label{T03}}
+\end{table}{}
+
+Se estima un valor total \$22'255.056 COP, para los tres meses de desarrollo. 
 
 
 \section{Análisis de riesgos}
@@ -858,8 +906,10 @@ donde todos los desarrolladores estarán presentes.
 
 
 \begin{thebibliography}{50}
-\bibitem{00} Description. Disponible en: \url{https://github.com}
 
+%\bibitem{00} Description. Disponible en: \url{https://github.com}
+\bibitem{01} Indeed Salarios.  Disponible en:\url{https://co.indeed.com/salaries/desarrollador-de-software-Salaries}
+\bibitem{02} Renta sistemas. Disponible en:\url{https://www.rentasistemas.com/}
 \end{thebibliography}{}
 
 \end{document}{}
