@@ -35,7 +35,7 @@
 
 
 %% Sets page size and margins
-\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,marginparwidth= 1.5cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth= 1.5cm]{geometry}
   
 \title{\LARGE \textbf{\\[0.5cm] Ingenio\\[2.5cm]}}
 
@@ -119,13 +119,13 @@ autores, en caso contrario su cuenta podría ser vetada o eliminada de la plataf
 \subsection{Descripción de los Roles de Usuario}
 
 \begin{itemize}
-    \item \textbf{Administrador:} Individuo que posee permisos especiales que le 
-    permiten otorgar o despojar el rol de autor para los usuarios, este tendrá que
-    verificar que el usuario que desee publicar contenido en la plataforma posea
-    comprobantes que respalden su experiencia académica y laboral sobre uno o varios
-    temas relacionados con la ingeniería, también será el responsable de atender las
-    diferentes denuncias realizadas por los usuarios y determinar si es pertinente o 
-    no vetar o eliminar al usuario denunciado.
+    \item \textbf{Administrador:} Individuo que posee el rol de usuario y administrador,
+    este tiene permisos especiales que le permiten otorgar o despojar el rol de autor
+    para los usuarios, este tendrá que verificar que el usuario que desee publicar
+    contenido en la plataforma posea comprobantes que respalden su experiencia académica
+    y laboral sobre uno o varios temas relacionados con la ingeniería, también será el
+    responsable de atender las diferentes denuncias realizadas por los usuarios y
+    determinar si es pertinente o no vetar o eliminar al usuario denunciado.
     
     \item \textbf{Autor:} Individuo que posee el rol de usuario y autor, este puede 
     publicar contenido relacionado con la ingeniería en la plataforma e interactuar
@@ -245,7 +245,7 @@ donde todos los desarrolladores estarán presentes.
         \hline
         Juan Peña       &       &       \\
         \hline
-        Carlos Rincón   &   5    &   2    \\
+        Carlos Rincón   &   5    &  2     \\
         \hline
         Tatiana Zambrano    & 5      &  2     \\
         \hline
@@ -256,33 +256,54 @@ donde todos los desarrolladores estarán presentes.
 
 \section{Historias de Usuario}
 
+Para la elaboración de las historias de usuarios se definieron diferentes criterios de
+riesgo y prioridad, que facilitará la clasificación de cada historia en estas
+categorías, y al mismo tiempo, determinar cuál de ellas elaborar primero y la atención
+requerida en las dependencias y el manejo de datos a las que estas tiene acceso.\\
+
+Para determinar el nivel de esfuerzo requerido en la elaboración de las historias (donde
+este este no está relacionado con el tiempo invertido en ellas), fue utilizada la
+técnica planning poker, donde tomamos como historia base la "creación de una cuenta" por
+parte del rol \textit{visitante}, a la que le fue asignada un esfuerzo de 3 puntos. El
+esfuerzo de las otras historias fue determinado por un consenso grupal en donde se
+comparaba la complejidad de las historias faltantes con la historia base.\\
 
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{1cm}|M{2cm}|M{8cm}|}
+    \begin{tabular}{|M{1cm}|M{2cm}|M{11cm}|}
         \hline
         \textbf{Valor}   &\textbf{Significado}   &\textbf{Criterio}\\
         \hline 
         \multirow{1}{1cm}{\centering 1}    
             &\multirow{1}{2cm}{\centering Muy bajo}
-            & Criterio      \\
+            & La historia describe una funcionalidad que no soluciona ninguna parte del
+            problema propuesto, ni otras historias dependen de esta para su correcto
+            funcionamiento.    \\
         \hline
         \multirow{1}{1cm}{\centering 2}    
             &\multirow{1}{2cm}{\centering Bajo}
-            & Criterio      \\
+            & La historia describe una funcionalidad relacionada con la solución de una
+            parte del problema propuesto, pero esta no es indispensable para el correcto
+            funcionamiento de la plataforma.  \\
         \hline
         \multirow{1}{1cm}{\centering 3}    
             &\multirow{1}{2cm}{\centering Moderado}
-            & Criterio      \\
+            & La historia describe una funcionalidad que resuelve una parte del problema
+            propuesto y otras historias dependen poco de ella para su correcto
+            funcionamiento. \\
         \hline
         \multirow{1}{1cm}{\centering 4}    
             &\multirow{1}{2cm}{\centering Alto}
-            & Criterio      \\
+            & La historia describe una funcionalidad que resuelve una parte del problema
+            propuesto y otras historias dependen en gran medida de esta para su correcto
+            funcionamiento.\\
         \hline
         \multirow{1}{1cm}{\centering 5}    
             &\multirow{1}{2cm}{\centering Muy alto}
-            & Criterio      \\
+            & La historia describe una funcionalidad que resuelve una parte del problema
+            propuesto, otras historias dependen en gran medida de esta para su correcto
+            funcionamiento o maneja datos sensibles de los usuarios de la plataforma.\\
         \hline
     \end{tabular}
     \caption{Niveles de riesgo}
@@ -292,29 +313,35 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{1cm}|M{2cm}|M{8cm}|}
+    \begin{tabular}{|M{1cm}|M{2cm}|M{11cm}|}
         \hline
         \textbf{Valor}   &\textbf{Significado}   &\textbf{Criterio}\\
         \hline 
         \multirow{1}{1cm}{\centering 1}    
             &\multirow{1}{2cm}{\centering Muy baja}
-            & Criterio      \\
+            & La historia no formula una funcionalidad que solucione alguna parte del
+            problema propuesto. \\
         \hline
         \multirow{1}{1cm}{\centering 2}    
             &\multirow{1}{2cm}{\centering Baja}
-            & Criterio      \\
+            & La historia formula una funcionalidad que está relacionada con la solución
+            de alguna parte del problema propuesto.\\
         \hline
         \multirow{1}{1cm}{\centering 3}    
             &\multirow{1}{2cm}{\centering Moderada}
-            & Criterio      \\
+            & La historia describe una funcionalidad que soluciona una parte del
+            problema propuesto pero esta no es crítica u otras historias no dependen 
+            de esta para su elaboración. \\
         \hline
         \multirow{1}{1cm}{\centering 4}    
             &\multirow{1}{2cm}{\centering Alta}
-            & Criterio      \\
+            & La historia describe una funcionalidad que soluciona una parte del
+            problema propuesto y otras historias dependen de esta para ser elaboradas.\\
         \hline
         \multirow{1}{1cm}{\centering 5}    
             &\multirow{1}{2cm}{\centering Muy alta}
-            & Criterio      \\
+            & La historia describe una funcionalidad que soluciona una parte crítica del
+            problema propuesto y debe ser realizada en el menor tiempo posible.\\
         \hline
     \end{tabular}
     \caption{Niveles de prioridad}
@@ -325,7 +352,7 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Nombre}}\\
         \hline
@@ -340,18 +367,18 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+            & \multicolumn{3}{|p{12cm}|}{
                 
             }\\
         \hline
@@ -367,7 +394,7 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Nombre}}\\
         \hline
@@ -382,18 +409,18 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Visitante
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+            & \multicolumn{3}{|p{12cm}|}{
                 
             }\\
         \hline
@@ -409,7 +436,7 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Nombre}}\\
         \hline
@@ -424,18 +451,18 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Usuario
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+            & \multicolumn{3}{|p{12cm}|}{
                 
             }\\
         \hline
@@ -443,11 +470,11 @@ donde todos los desarrolladores estarán presentes.
     \caption{Nombre de la historia}
     \label{User00}}
 \end{table}{}
-
+%1
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Inicio de sesión}}\\
         \hline
@@ -462,19 +489,19 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{4}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Usuario
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} iniciar sesión en el sistema.
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} hacer uso de las funcionalidades a
                 las que puedo acceder.
             }\\
         \hline
-        \multirow{4}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
                 El usuario será redirigido a la página principal, donde podrá ver
                 la sección de noticias general, los buscadores y las secciones de
                 cada categoría a las que está suscrito.
@@ -484,13 +511,13 @@ donde todos los desarrolladores estarán presentes.
     \caption{Inicio de sesión para el rol usuario}
     \label{User01}}
 \end{table}{}
-
+%2
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
-        \multicolumn{4}{|c|}{\textbf{Nombre}}\\
+        \multicolumn{4}{|c|}{\textbf{Ver la información de mi cuenta}}\\
         \hline
         \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
         \hline
@@ -502,27 +529,277 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Pepito Perez }\\
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
-        \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+        \multirow{5}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Usuario
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} ver mi perfil 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
-                \textcolor{red}{Con el fin de} revisar la información relacionada a 
-                mi cuenta.
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} revisar mis datos personales, las
+                categorías a las que estoy suscrito, la cantidad de usuarios que sigo o
+                me siguen y ver cuántos y cuales publicaciones he guardado.
             }\\
         \hline
-        \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
                 El usuario podrá acceder a una sección en donde podrá visualizar
-                sus datos personales
+                sus datos personales y los relacionados a este, que formen parte de la
+                plataforma.
             }\\
         \hline
     \end{tabular}
-    \caption{Nombre de la historia}
+    \caption{Ver información de la cuenta para el rol usuario}
     \label{User02}}
+\end{table}{}
+%3
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Modificar los datos de mi cuenta}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} modificar mis datos personales
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} actualizar o corregir mi información
+                básica.
+            }\\
+        \hline
+        \multirow{4}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+               El usuario será redirigido a un formulario en el que se le permitirá
+               ingresar su información nuevamente.
+               Luego de guardar los cambios, el usuario será redirigido a su perfil en
+               donde podrá verificar las modificaciones realizadas.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Modificar información de la cuenta para el rol usuario}
+    \label{User03}}
+\end{table}{}
+%4
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Eliminar mi cuenta}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} eliminar mi cuenta.
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} borrar toda información relacionada a mi
+                usuario y no hacer parte de la revista.
+            }\\
+        \hline
+        \multirow{6}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+                El usuario podrá acceder a una opción desde su cuenta, que le permita
+                eliminarla, al seleccionar dicha opción se le pedirá una validación y
+                al ser aceptada el usuario será borrado y eliminado del sistema, por lo
+                que su correo ya no será valido para ingresar a la plataforma y los
+                demás usuarios no podrán ver la información relacionada a este.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Eliminar cuenta para el rol usuario}
+    \label{User04}}
+\end{table}{}
+%5
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Realizar una búsqueda básica}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{4}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} realizar una búsqueda básica.
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} encontrar archivos de interés en el sistema, únicamente ingresando palabras claves o títulos de las publicaciones.
+            }\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+                El usuario podrá ver en la página principal un espacio en el que podrá
+                ingresar palabras clave, luego de ello será desplegada una lista con los diferentes archivos que cumplan los requisitos.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Búsqueda básica para el rol usuario}
+    \label{User05}}
+\end{table}{}
+%6
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Realizar una búsqueda avanzada}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} realizar una búsqueda avanzada.
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} acceder a archivos utilizando filtros como año de publicación, autor, categoría, título y palabras claves.
+            }\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+                El usuario podrá ver en la página principal una opción que le permitirá
+                realizar búsquedas avanzadas, luego de diligenciar uno o varios
+                filtros, será desplegada una lista de archivos que cumplan con los
+                requisitos.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Búsqueda avanzada para el rol usuario}
+    \label{User06}}
+\end{table}{}
+%7
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Ver las categorías de la plataforma}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{4}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} ver las categorías de la plataforma.
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} ver las diferentes publicaciones
+                pertenecientes a estas.
+            }\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+                En la página de inicio el usuario podrá ver varias pestañas, una para
+                cada categoría, y al seleccionar alguna de estas se le desplegarán las
+                diferentes publicaciones relacionadas a esta.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Ver categorías para el rol usuario}
+    \label{User07}}
+\end{table}{}
+%8
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Suscripción a categorías}}\\
+        \hline
+        \textbf{ID} &\showmycounter &\textbf{Rol}                   &  Usuario \\
+        \hline
+        \textbf{Prioridad}          &   &\textbf{Riesgo en Desarrollo}  &   \\
+        \hline
+        \textbf{Puntos Esfuerzo}    &   &\textbf{Iteración Asignada}    &  1 \\
+        \hline
+        \multirow{2}{3cm}{\centering\textbf{Programadores asignados}} 
+            &\multicolumn{3}{|c|}{ Pepito Perez }\\
+            &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
+        \hline
+        \multirow{4}{3cm}{\centering\textbf{Descripción}}
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Como} Usuario
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Quiero} suscribirme o no a una o más categorías.
+            }\\
+            &\multicolumn{3}{|p{12cm}|}{
+                \textcolor{red}{Con el fin de} recibir notificaciones cada vez que sean
+                publicados archivos pertenecientes a la categoría.
+            }\\
+        \hline
+        \multirow{3}{3cm}{\centering\textbf{Validación}}
+            & \multicolumn{3}{|p{12cm}|}{
+                Cada pestaña de las categorías tendrán una opción que le permitirá al
+                usuario suscribirse, al seleccionarla el usuario empezará a recibir
+                notificaciones cada vez que dicha categoría reciba nuevas
+                publicaciones.
+            }\\
+        \hline
+    \end{tabular}
+    \caption{Suscripción a categorías para el rol usuario}
+    \label{User08}}
 \end{table}{}
 
 %borrar
@@ -532,7 +809,7 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Nombre}}\\
         \hline
@@ -547,18 +824,18 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Autor
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+            & \multicolumn{3}{|p{12cm}|}{
                 
             }\\
         \hline
@@ -574,7 +851,7 @@ donde todos los desarrolladores estarán presentes.
 \begin{table}[H]
     \centering
     \small{
-    \begin{tabular}{|M{3cm}|M{2cm}|M{3cm}|M{2cm}|}
+    \begin{tabular}{|M{3.5cm}|M{3.5cm}|M{3.5cm}|M{3.5cm}|}
         \hline
         \multicolumn{4}{|c|}{\textbf{Nombre}}\\
         \hline
@@ -589,18 +866,18 @@ donde todos los desarrolladores estarán presentes.
             &\multicolumn{3}{|c|}{ Juanita Alcachofa}\\
         \hline
         \multirow{3}{3cm}{\centering\textbf{Descripción}}
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Como} Administrador
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Quiero} 
             }\\
-            &\multicolumn{3}{|p{8cm}|}{
+            &\multicolumn{3}{|p{12cm}|}{
                 \textcolor{red}{Con el fin de} 
             }\\
         \hline
         \multirow{1}{3cm}{\centering\textbf{Validación}}
-            & \multicolumn{3}{|p{8cm}|}{
+            & \multicolumn{3}{|p{12cm}|}{
                 
             }\\
         \hline
@@ -707,7 +984,7 @@ donde todos los desarrolladores estarán presentes.
         \centering
         \includegraphics[scale = 0.7]{images/ERD.png}
         \caption{Descripción}
-        \label{F01}
+        \label{F13}
     \end{figure}{}
 
 \section{Modelo de Base de Datos}
@@ -715,18 +992,25 @@ donde todos los desarrolladores estarán presentes.
         \centering
         \includegraphics[scale = 0.55]{images/Diagr_BD.png}
         \caption{Descripción}
-        \label{F01}
+        \label{F11}
     \end{figure}{}
 \end{landscape}
 
 \section{Estimación de Costos}
-El tiempo estimado para realizar el proyecto es del 25 de Marzo del 2020 al 25 de Junio del 2020 (3 meses). Por lo tanto todos los gastos se contemplan para este tiempo estimado.\\
+El tiempo estimado para realizar el proyecto es del 25 de Marzo del 2020 al 25 de Junio
+del 2020 (3 meses). Por lo tanto todos los gastos se contemplan para este tiempo
+estimado.\\
 
 \textbf{Costos Directos de Personal:}
 
-Los costos directos de personal hacen referencia a las personas contratadas que colaboran directamente en el proyecto; Scrum Master y 3 desarrolladores.\\
+Los costos directos de personal hacen referencia a las personas contratadas que
+colaboran directamente en el proyecto; Scrum Master y 3 desarrolladores.\\
 
-Según la página de búsqueda de empleos “Indeed”\cite{01}, el salario promedio de un Desarrollador de Software en Colombia es de \$ 2’383.039 COP al mes y para un Scrum Master es de \$3.942.313 .Tanto el Scrum Master, como los desarrolladores, se encuentran en últimos semestres de universidad, al momento realizar el proyecto y sus contratos serán por prestación de servicios. 
+Según la página de búsqueda de empleos “Indeed” \cite{01}, el salario promedio de un
+Desarrollador de Software en Colombia es de \$ 2’383.039 COP al mes y para un Scrum
+Master es de \$3.942.313 .Tanto el Scrum Master, como los desarrolladores, se encuentran
+en últimos semestres de universidad, al momento realizar el proyecto y sus contratos
+serán por prestación de servicios. 
 
 % plantilla: copiar y pegar
 \begin{table}[H]
@@ -740,12 +1024,18 @@ Según la página de búsqueda de empleos “Indeed”\cite{01}, el salario prom
         \hline
         \multicolumn{2}{c}{\textbf{Total} \dotfill \$18'976.056} \\
     \end{tabular}
-    \label{T03}}
+    \label{T04}}
 \end{table}{}
 
 \textbf{Costos Directos e indirectos de material :}
 
-Estos costos son los relacionados a la compra o alquiler de equipos necesarios para el desarrollo del software, para este proyecto consideramos el alquiler de 4 computadores\cite{02} por un valor mensual de \$220.000 COP, además se consideran como costos indirectos el consumo de internet y energía eléctrica en el lugar de desarrollo, estos corresponden a un valor de \$110.000 COP mensuales de servicio de energía eléctrica y \$103.000 por servicio de internet, a continuación se muestran los valores para un total de tres meses.
+Estos costos son los relacionados a la compra o alquiler de equipos necesarios 
+para el desarrollo del software, para este proyecto consideramos el alquiler de 
+4 computadores\cite{02} por un valor mensual de \$220.000 COP, además se consideran 
+como costos indirectos el consumo de internet y energía eléctrica en el lugar de 
+desarrollo, estos corresponden a un valor de \$110.000 COP mensuales de servicio 
+de energía eléctrica y \$103.000 por servicio de internet, a continuación se 
+muestran los valores para un total de tres meses.
 \begin{table}[H]
     \centering
     \small{
@@ -770,11 +1060,12 @@ Estos costos son los relacionados a la compra o alquiler de equipos necesarios p
         \textbf{Concepto}   &\textbf{Valor}\\
         \\
         \multicolumn{2}{c}{Costos directos personal  \dotfill  \$18'976.056} \\
-        \multicolumn{2}{c}{Costos directos e indirectos de recursos fisicos \dotfill \$3'279.000} \\
+        \multicolumn{2}{c}{Costos directos e indirectos 
+        de recursos fisicos \dotfill \$3'279.000} \\
         \hline
         \multicolumn{2}{c}{\textbf{Total} \dotfill \$22'255.056} \\
     \end{tabular}
-    \label{T03}}
+    \label{T05}}
 \end{table}{}
 
 Se estima un valor total \$22'255.056 COP, para los tres meses de desarrollo. 
@@ -906,10 +1197,11 @@ Se estima un valor total \$22'255.056 COP, para los tres meses de desarrollo.
 
 
 \begin{thebibliography}{50}
-
-%\bibitem{00} Description. Disponible en: \url{https://github.com}
-\bibitem{01} Indeed Salarios.  Disponible en:\url{https://co.indeed.com/salaries/desarrollador-de-software-Salaries}
+\bibitem{01} Indeed Salarios.  Disponible en:
+\url{https://co.indeed.com/salaries/desarrollador-de-software-Salaries}
 \bibitem{02} Renta sistemas. Disponible en:\url{https://www.rentasistemas.com/}
+
+
 \end{thebibliography}{}
 
 \end{document}{}
