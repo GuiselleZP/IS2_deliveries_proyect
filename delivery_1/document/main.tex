@@ -39,7 +39,7 @@
 %% Sets page size and margins
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth= 1.5cm]{geometry}
   
-\title{\LARGE \textbf{\\[0.5cm] Ingenio\\[2.5cm]}}
+\title{\LARGE \textbf{\\[0.5cm] IngenioUN\\[2.5cm]}}
 
 % Chicos, porfavor incluyan sus nombres en orden alfabetico
 \author{\textbf{Grupo 7}\\[0.5cm]
@@ -441,7 +441,7 @@ historias faltantes con la historia base.\\
         & El visitante podrá acceder a un formulario en el que ingresará su
         nombre, correo de respaldo, correo principal y contraseña. Al validar
         esta información, el visitante será un nuevo usuario.
-        & 5 & 5 & 3 &  
+        & 5 & 5 & 3 &  1
         &  \\
         \hline %7
         \showmycounter  & Usuario
@@ -514,7 +514,7 @@ historias faltantes con la historia base.\\
         & Acceder a los beneficios en la plataforma.
         & El usuario será redirigido a la página principal del sitio y podrá ver
         su nombre en la parte superior del sitio.
-        & 5 & 5 & 3 &  
+        & 5 & 5 & 3 &  1
         &  \\
         \hline %16
         \showmycounter  & Usuario
@@ -530,14 +530,14 @@ historias faltantes con la historia base.\\
         & Que otra persona no pueda usar mi cuenta.
         & El usuario seleccionara la opción "sign out" y será redirigido a la
         pantalla principal de visitante.
-        & 5 & 4 & 1 &  
+        & 5 & 4 & 1 &  1
         &  \\
         \hline %18
         \showmycounter  & Usuario
         & Ver mi perfil.
         & Ver mi información personal.
         & El usuario verá sus datos ingresados durante el registro de la cuenta.
-        & 4 & 4 & 3 &  
+        & 4 & 4 & 3 &  1
         &  \\
         \hline %19
         \showmycounter  & Usuario
@@ -913,16 +913,16 @@ historias faltantes con la historia base.\\
 \section{Modelo Entidad Relación}
     \begin{figure}[H]
         \centering
-        \includegraphics[scale = 0.7]{images/ERD.png}
-        \caption{Descripción}
+        \includegraphics[scale = 0.7]{images/ERD_v02.png}
+        \caption{Diagrama modelo ER.}
         \label{F13}
     \end{figure}{}
 
 \section{Modelo de Base de Datos}
     \begin{figure}[H]
         \centering
-        \includegraphics[scale = 0.55]{images/Diagr_BD.png}
-        \caption{Descripción}
+        \includegraphics[scale = 0.55]{images/BD_v02.png}
+        \caption{Diagrama modelo BD}
         \label{F11}
     \end{figure}{}
 \end{landscape}
@@ -1235,10 +1235,174 @@ Se estima un valor total \$72'000.000 COP por el costo total del proyecto.
     \label{Riesgos}
 \end{longtable}}
 
+
+\section {Comparación Frameworks }
+
+Para la elección de Frameworks que serán usados en el desarrollo del proyecto se realizo una comparación, entre diferentes entornos de trabajo tanto para backend y frontend, considerando: su popularidad, la disponibilidad de recursos de aprendizaje y sus funciones principales mostrando sus ventajas y desventajas.
+
+\textbf{FrontEnd}:  
+
+Para la elección de frameworks en FrontEnd se tuvo en cuenta, \textbf{React}, \textbf{Angular} y \textbf{Vue}.
+
+Inicialmente fueron considerados estos tres entornos dada su popularidad, ya que son de las herramientas más usadas en la actualidad, por lo tanto cuentan con una gran comunidad de desarrolladores, lo cual nos permite contar con mayor información y dada la antigüedad de algunos, se podría tener mas oportunidades en el ámbito laboral(React, angular), en la siguiente tabla se muestra la información correspondiente a la popularidad de estos entornos. 
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{5cm}|M{2.5cm}|M{2.5cm}|M{2.5cm}|}
+        \hline
+         &\textbf{Angular}   &\textbf{React} &\textbf{Vue Js}\\
+        \hline 
+            Stars on GitHub   & 26,924
+        & 73,530 & 63,438
+            \\
+        \hline
+            Contributors on GitHub & 495
+        & 1044 & 122
+            \\
+        \hline
+            Tagged questions on StackOverflow  & 66,152
+        & 54,158 & 8598
+            \\
+        \hline
+    \end{tabular}
+    \caption{Popularidad, Tomado de \cite{03}}
+    \label{Riesgo}}
+\end{table}{}
+
+Respecto a las funciones principales, todas tiene características que permiten destacar cada una de las herramientas; como por ejemplo Angular,que permite desde su entorno trabajar procesamiento y validación de formularios y comunicación HTTP, por el contrario estas son tareas que en React y Vue dependen del desarrollador, a continuación se muestra una tabla con las ventajas y desventajas de cada Framework.
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{2.5cm}|M{6.5cm}|M{6.5cm}|}
+        \hline
+        \textbf{Framework}  &\textbf{Ventajas}   &\textbf{Desventajas}\\
+        \hline 
+            React   &
+            \begin{itemize}
+                \item Alto desempeño.
+                \item Adecuado para aplicaciones con mucho tráfico.
+                \item DOM virtual(enlace de datos unidireccional).
+            \end{itemize}   &
+            \begin{itemize}
+                \item Necesita otras librerías para construir aplicaciones complejas.
+            \end{itemize}
+            \\
+        \hline
+            Angular & 
+            \begin{itemize}
+                \item Enlace de datos bidireccional
+                \item Aplicación simple de una pagina.
+                \item Permite procesamiento y validación de formularios.
+
+            \end{itemize}   &
+            \begin{itemize}
+                \item Se debe aprender Typescript.
+                \item Complejo y difícil de aprender.
+            \end{itemize}
+            \\
+        \hline
+            Vue.js  & 
+            \begin{itemize}
+                \item Alto desempeño. 
+                \item Flexibilidad. 
+                \item DOM visual y basado en componentes
+            \end{itemize}   &
+            \begin{itemize}
+                \item El más joven del los entornos 
+                \itme Poco mercado.
+                \item Ser demasiado flexible puede generar problemas
+            \end{itemize}
+            \\
+        \hline
+            
+    \end{tabular}
+    \caption{Frameworks FrontEnd}
+    }
+\end{table}{}
+
+Considerando la información anterior, seleccionamos Vue Js como framework frontEnd, ya que es uno de los más fáciles de aprender y se adapta fácilmente en la creación de interfaces de usuario además proporciona un período de cambio rápido de otros frameworks a Vue.js debido a la similitud con Angular y React en términos de diseño y arquitectura.
+
+\begin{table}[H]
+    \centering
+    \small{
+    \begin{tabular}{|M{2.5cm}|M{6.5cm}|M{6.5cm}|}
+        \hline
+        \textbf{Framework}  &\textbf{Ventajas}   &\textbf{Desventajas}\\
+        \hline 
+            Spring   & 
+            \begin{itemize}
+                \item 
+            \end{itemize}   & 
+            \begin{itemize}
+                \item 
+            \end{itemize}
+            \\
+        \hline
+            Django & 
+            \begin{itemize}
+                \item 
+            \end{itemize}   &
+            \begin{itemize}
+                \item 
+            \end{itemize}
+            \\
+        \hline
+            Node.js  &
+            \begin{itemize}
+                \item 
+            \end{itemize}   &
+            \begin{itemize}
+                \item 
+            \end{itemize}
+            \\
+        \hline
+            
+    \end{tabular}
+    \caption{Frameworks BackEnd}
+    }
+\end{table}{}
+
+%%%Escribir justificacion
+\section{Repositorio }
+
+\begin{itemize}
+    \item BackEnd
+    \item FrontEnd
+\end{itemize}
+
+\section{Sprint 1}
+
+\section*{Tablero Kanban}
+\section*{Slack} 
+\section*{Hash Spritn 1}
+\begin{itemize}
+    \item BackEnd
+    \item FrontEnd
+\end{itemize}
+
+
 \begin{thebibliography}{50}
 \bibitem{01} Indeed Salarios. Disponible en: 
 \url{https://co.indeed.com/salaries/desarrollador-de-software-Salaries}
 \bibitem{02} Renta sistemas. Disponible en:\url{https://www.rentasistemas.com/}
+
+\bibitem{03}Adictec, Cómo Elegir el Mejor Framework de Front-End.
+Disponible en:\url{https://adictec.com/como-elegir-el-mejor-framework-de-front-end/}
+
+\bibitem{04}Angular. Disponible en:\url{https://angular.io/docs}
+
+\bibitem{05}Vue Js.
+Disponible en:\url{https://vuejs.org/}
+
+\bibitem{06}React.
+Disponible en:\url{https://es.reactjs.org/docs/getting-started.html}
+
+\bibitem{06}Which front-end framework is the best in 2019, 
+Disponible en:\url{https://www.blog.duomly.com/which-front-end-framework-is-the-best-in-2019}
+\bibitem{07}Which front-end framework is the best in 2019, 
+Disponible en:\url{https://medium.com/drakezair/reactjs-vs-angularjs-vs-vuejs-la-pelea-de-los-grandes-2018-5f4027e61cef}
 
 \end{thebibliography}{}
 \end{document}{}
