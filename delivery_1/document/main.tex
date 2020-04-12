@@ -1238,13 +1238,13 @@ Se estima un valor total \$72'000.000 COP por el costo total del proyecto.
 
 \section {Comparación Frameworks }
 
-Para la elección de Frameworks que serán usados en el desarrollo del proyecto se realizo una comparación, entre diferentes entornos de trabajo tanto para backend y frontend, considerando: su popularidad, la disponibilidad de recursos de aprendizaje y sus funciones principales mostrando sus ventajas y desventajas.
+Para la elección de Frameworks que serán usados en el desarrollo del proyecto se realizo una comparación, entre diferentes entornos de trabajo tanto para Back End y Front End, considerando: su popularidad, la disponibilidad de recursos de aprendizaje y sus funciones principales, mostrando sus ventajas y desventajas.\\
 
-\textbf{FrontEnd}:  
+\textbf{FrontEnd}:\\
 
-Para la elección de frameworks en FrontEnd se tuvo en cuenta, \textbf{React}, \textbf{Angular} y \textbf{Vue}.
+Para la elección de frameworks en FrontEnd se tuvo en cuenta, \textbf{React}, \textbf{Angular} y \textbf{Vue}.\\
 
-Inicialmente fueron considerados estos tres entornos dada su popularidad, ya que son de las herramientas más usadas en la actualidad, por lo tanto cuentan con una gran comunidad de desarrolladores, lo cual nos permite contar con mayor información y dada la antigüedad de algunos, se podría tener mas oportunidades en el ámbito laboral(React, angular), en la siguiente tabla se muestra la información correspondiente a la popularidad de estos entornos. 
+Inicialmente fueron considerados estos tres entornos dada su popularidad, ya que son de las herramientas más usadas en la actualidad, por lo tanto cuentan con una gran comunidad de desarrolladores, lo cual nos permite contar con mayor información y dada la antigüedad de algunos, se podría tener mas oportunidades en el ámbito laboral (React y Angular), en la siguiente tabla se muestra la información correspondiente a la popularidad de estos entornos. 
 
 \begin{table}[H]
     \centering
@@ -1322,7 +1322,12 @@ Respecto a las funciones principales, todas tiene características que permiten 
     }
 \end{table}{}
 
-Considerando la información anterior, seleccionamos Vue Js como framework frontEnd, ya que es uno de los más fáciles de aprender y se adapta fácilmente en la creación de interfaces de usuario además proporciona un período de cambio rápido de otros frameworks a Vue.js debido a la similitud con Angular y React en términos de diseño y arquitectura.
+Considerando la información anterior, seleccionamos Vue JS como framework FrontEnd, ya que es uno de los más fáciles de aprender y se adapta fácilmente en la creación de interfaces de usuario además proporciona un período de cambio rápido de otros frameworks a Vue.js debido a la similitud con Angular y React en términos de diseño y arquitectura.\\
+
+\textbf{BackEnd}:\\
+
+Para realizar la comparacion de frameworks en Back End, decidimos analizar algunos de los mas usados y conocidos actualmente, \textbf{Sprint (Java)}, \textbf{Django (Python)} y \textbf{Node JS (Javascript)}.\\
+
 
 \begin{table}[H]
     \centering
@@ -1333,28 +1338,40 @@ Considerando la información anterior, seleccionamos Vue Js como framework front
         \hline 
             Spring   & 
             \begin{itemize}
-                \item 
+                \item Buena separación entre componentes de front-end y la lógica de Java.
+                \item Desarrollo orientado a componentes estilo SWING
+                \item Facil de debuggear
+                \item Su uso son Java y HTML simples, los conceptos de Java se utilizan a gran nivel
             \end{itemize}   & 
             \begin{itemize}
-                \item 
+                \item Se actualiza muy constantemente, y esto puede causar problema con versiones nuevas
+                \item Entre mas componentes tiene una pagina, mas complejo y desorganizado se vuelve el codigo
+                \item Limitado a pagina simples
+                \item Documentacion actalizada escaza
             \end{itemize}
             \\
         \hline
             Django & 
             \begin{itemize}
-                \item 
+                \item Django fue creado para trabajar bajo un patrón MVC (Modelo Vista Controlador) quien se encarga del manejo de controladores, esto lo caracteriza en un framework reusable y permite el desarrollo ágil.
+                \item Según la comunidad que desarrolla bajo Python, los API’s REST que genera Django son mucho mejores, debido a que se pueden convertir en páginas HTML como puntos finales (Endpoints).
+                \item Tiene un panel de administración para gestionar bases de datos.
             \end{itemize}   &
             \begin{itemize}
-                \item 
+                \item A pesar de su excelente documentación, es muy extensa y tiende a ser confusa.
+                \item A la hora de realizar un API REST conlleva cierta condición de dificultad a comparación de Flask.
+                \item La implementación de sockets es algo compleja de usar.
             \end{itemize}
             \\
         \hline
             Node.js  &
             \begin{itemize}
-                \item 
+                \item Si tu aplicación no tiene ningún cálculo intensivo del CPU, puedes construir en Javascript de arriba a abajo, inclusive a nivel de base de datos si utilizas el objeto de almacenamiento JSON como MongoDB DB. Esto facilita el desarrollo (incluyendo la contratación) significativamente.
+                \item Los Crawlers reciben una respuesta totalmente HTML, que es mucho más SEO-friendly, digamos, una sola página o en una aplicación de Websockets app se ejecuta sobre Node.js.
             \end{itemize}   &
             \begin{itemize}
-                \item 
+                \item • Un CPU de cálculo intensivo bloqueará la receptividad del Node.js, por lo que una plataforma de roscado es un mejor enfoque. Alternativamente, podrías intentar escalar el cómputo.
+                \item • Utilizando Node.js con una base de datos relacional es aún bastante doloroso (leer más abajo para ver más detalles). Hazte un favor y escoge cualquier otro entorno como Rails, Django, o ASP.NET MVC si estás intentando realizar operaciones relacionales.
             \end{itemize}
             \\
         \hline
@@ -1363,6 +1380,37 @@ Considerando la información anterior, seleccionamos Vue Js como framework front
     \caption{Frameworks BackEnd}
     }
 \end{table}{}
+
+Segun la comparacion de estos tres llegamos a la eleccion de \textbf{NODE JS}.\\
+
+Ya que la eleccion para Front End fue  Vue JS, recurrimos a la tarea de analizar los Stacks mas usados y pedidos dentro de la industria de software que se relacionaran de mejor manera a estos frameworks.\\
+
+Al buscar esto, encontramos que los mas usados son:\\ 
+
+\textbf{Stack MEAN}:
+
+MongoDB, Express, AngularJS y Node.js\\
+
+\textbf{Stack MERN}:
+
+MongoDB, Express, React y Node.js\\
+
+Lo que nos llevo a encontrar:
+
+\textbf{Stack MEVN}:
+
+MongoDB, Express, Vue y Node.js\\
+
+
+El cual funciona de la siguiente forma:
+\begin{itemize}
+\item MongoDB: servicio de gestión de bases de datos multiplataforma orientado a documentos (conjunto de registros o de datos) y de esquema totalmente libre (no debe estar predefinido). Así, cada documento puede tener atributos distintos al resto.
+\item Vue JS: marco de desarrollo de front-end. Es un framework de JavaScript de código abierto y libre, que permite el desarrollo de aplicaciones web en el lado del cliente.
+\item Node.js: entorno de desarrollo en la capa del servidor. Su objetivo es que un programador sea capaz de desarrollar una aplicación con altos niveles de escalabilidad en una única máquina, aunque las peticiones de usuarios y clientes no dejen de aumentar con el tiempo.  La lógica apunta a la fórmula ‘más clientes, más coste’, pero Node.js rompe esa ecuación.
+\item Express: framework para el desarrollo de back-end. Es un marco de desarrollo rápido, flexible y con una gran comunidad detrás, lo cual siempre es importante por el volumen de documentación existente para el desarrollo de proyectos.
+\end{itemize}
+
+Y este el ultimo \textbf{sera el Stack que se usara para realizar el desarrollo} de "Ingenio". Otro factor importante para la eleccion de este Stack, es la programacion usando un solo lenguaje (Javascript) tanto para Front End y Back End.
 
 %%%Escribir justificacion
 \section{Repositorio }
